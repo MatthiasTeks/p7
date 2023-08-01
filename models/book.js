@@ -8,7 +8,7 @@ const RatingSchema = new mongoose.Schema({
 const BookSchema = new mongoose.Schema({
   userId: { type: String, required: true },
   title: { type: String, required: true },
-  author: { type: String, required: true },
+  author: String,
   imageUrl: String,
   year: Number,
   genre: String,
@@ -17,3 +17,5 @@ const BookSchema = new mongoose.Schema({
 });
 
 const Book = mongoose.model('Book', BookSchema);
+
+module.exports = Book;

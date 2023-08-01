@@ -1,5 +1,5 @@
 const argon2 = require('argon2');
-const hashingOptions = require('../config/hashOptions');
+const hashingOptions = require('../config/hash-options');
 
 const hashPassword = async (req, res, next) => {
     try {

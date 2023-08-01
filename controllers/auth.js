@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-const verifyPassword = require("../helpers/verifyPassword");
+const verifyPassword = require("../helpers/verify-password");
 
 require('dotenv').config();
 

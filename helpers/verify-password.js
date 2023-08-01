@@ -1,5 +1,5 @@
 const argon2 = require('argon2');
-const hash = require("../middlewares/hashPassword");
+const hash = require("../middlewares/hash-password");
 
 const verifyPassword = async (plainPassword, hashedPassword,) => {
     if (!hashedPassword) {
