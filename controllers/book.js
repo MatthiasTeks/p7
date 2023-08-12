@@ -12,7 +12,7 @@ const createBook = async (req, res) => {
     book.userId = userId;
 
     if (file) {
-      book.imageUrl = `http://localhost:3000/images/${file.filename}`;
+      book.imageUrl = `http://localhost:4000/images/${file.filename}`;
     }    
 
     const newBook = new Book(book);
